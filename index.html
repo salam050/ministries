@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lord's Army Ministries</title>
+    <!--<link rel=icon href="favicon.ico">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .space {
+            height: 50px;
+        }
+
+        .header {
+            width: 1200px;
+            height: 650px;
+            position: relative;
+            margin: 0 auto;
+
+        }
+
+        .wrapper {
+            width: 1200px;
+            height: 4500px;
+            background-color: white;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #logo {
+            margin: 0 auto;
+            display: block;
+        }
+
+        nav {
+            width: 1180px;
+            height: 100px;
+            background-color: white;
+            color: darkgrey;
+            margin: 0 auto;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        p#nav_section_01, p#nav_section_02, p#nav_section_03, p#nav_section_04 {
+            display: inline;
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: bold;
+            position: relative;
+            line-height: 50px;
+            margin: 0 10px 100px 10px;
+            text-decoration: none;
+            color: #985d5b;
+        }
+
+        .footer {
+            bottom: 25px;
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: #77c8e5;
+            background-color: grey;
+            padding: 10px 5px 5px 5px;
+        }
+
+        #section_01, #section_03 {
+            width: 1120px;
+            height: 820px;
+            background-color: white;
+            color: black;
+            margin: 0 auto;
+
+        }
+
+        #section_02 {
+            width: 1120px;
+            height: 620px;
+            background-color: white;
+            color: black;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        p {
+            padding-top: 25px;
+            padding-left: 10px;
+            font-family: sans-serif;
+            text-indent: 4em;
+            font-size: 12pt;
+            line-height: 17pt;
+        }
+
+        .story {
+            margin: 0 auto;
+            position: center;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #quote {
+            margin: 0 auto;
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="top"></div>
+<div class="wrapper">
+    <div class="space"></div>
+    <div class="header">
+        <img src="logo.png" height="400px" id="logo">
+
+        <nav>
+            <a href="#section_01"><p id="nav_section_01">About Us</p></a>
+            <a href="#section_02"><p id="nav_section_02">Pantry Box Locations</p></a>
+            <a href="#section_03"><p id="nav_section_03">Contact</p></a>
+            <a href="https://www.facebook.com/pg/LordsArmyMinistries4you/posts/?ref=page_internal" target="_blank"><p
+                    id="nav_section_04">Current Needs</p></a>
+
+
+        </nav>
+    </div>
+
+
+    <div id="section_01"><br>
+        <h1 class="story">It All Happened In A Day...</h1>
+        <br>
+        <img src="quote.jpg" height="400px" id="quote">
+
+        <p> As I sit here writing this it all seems so surreal that it has finally happened. WE OPENED THE MINISTRY!! To
+            be honest, I really didn’t have to wait that long. Now to come to the point to have the idea that’s another
+            thing, lol. Several years ago my family volunteered to pack meals at Fellowship Church in Greenwood and boy
+            did I get the “bug”. What of course was really happening was the Holy Spirit was waking me up and showing
+            the plan that was meant for me. The feeling that came over me that day began to haunt me in a good way. I
+            needed more in my life, selfless giving. I needed to show my children that God wants us to serve Him by
+            serving others no matter what their situation is financially or their race or religion. There is so many
+            others in situations thinking they have no way out or no one will ever help them. They even think they
+            deserve to be in this situation because of their sins. GREAT NEWS! Our sins have been washed clean! Everyone
+            needs to know this and the need to KNOW HIM. In our ministry we hope to show others they are worthy of God’s
+            love and ours. We have started out with 3 food boxes that will be in different areas in Greenwood. Then we
+            also have a unit currently being filled up with clothing for all ages and sizes. We want to accept bedding,
+            gently used toys, and baby items also. The last part of our ministry we know we will slowly build is a
+            service database which will be others who have already come forward to volunteer in a certain service they
+            can provide for others in need. We hope to have many lawn care, mechanics, handymen, shoppers, cleaners,
+            builders, etc just waiting for our call to serve someone in the community. In the meantime WE LOVE
+            DONATIONS! We are currently needing gas cards, non-perishables, hygiene products, and diapers of all sizes.
+            Let us know if you want to get involved with the ministry in serving others, donations or praying for our
+            clients! God bless and remember to always have your hand out to reach someone who may need it.</p></div>
+    <div id="section_02"><br>
+        <h1 class="story">Pantry Box Locations</h1>
+        <br><p>locations</p></div>
+    <div id="section_03"><br>
+        <h1 class="story">Contact Us</h1>
+        <br><p>email and phone</p></div></div>
+
+</div><!--end of wrapper -->
+<script>
+    $(document).ready(function () {
+// Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+// Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+// Prevent default anchor click behavior
+                event.preventDefault();
+
+// Store hash
+                var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 400, function () {
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+</body>
+</html>
